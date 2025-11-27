@@ -68,4 +68,38 @@
 
 // export default Car;
   
-import React from "react";
+// import React from "react";
+// function App() {
+//   let isLoggedIn = false;
+
+//   if (isLoggedIn) {
+//     return <h1>Welcome User</h1>;
+//   } else {
+//     return <h1>Please Login</h1>;
+//   }
+// }
+
+// export default App;
+// function App() {
+//   let age = 20;
+
+//   return (
+//     <div>
+//       {age >= 18 ? <h1>Adult</h1> : <h1>Minor</h1>}
+//     </div>
+//   );
+// }
+
+// export default App;
+const fruits = ["Apple", "Banana", "Orange"];
+
+function FruitList() {
+  return (
+    <div>
+      {fruits.map((item) => (
+        <h2>{item}</h2>
+      ))}
+    </div>
+  );
+}
+
