@@ -3,7 +3,7 @@
 // // import viteLogo from '/vite.svg'
 // // import './App.css'
 // // import Student from './Student.jsx'
-// import "./App.css";
+ 
 // // import "bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -68,3 +68,4 @@
 
 // export default Car;
   
+import React from "react";

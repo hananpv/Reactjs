@@ -1,11 +1,11 @@
 import React from 'react'
-import Char from "./hey"
+import Car from "./assets/hey"
 
 
 export default function Vehicle() {
   return (
     <div>
-      <Char cars="bmw"/>
+      <Car cars="bmw"/>
     </div>
   )
 }
