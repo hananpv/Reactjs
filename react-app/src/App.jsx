@@ -7,99 +7,30 @@
 // // import "bootstrap/dist/css/bootstrap.min.css";
 
 
-// function written(){
-//   const[name,setname]=useState(0)
 
+import React from "react"
+import { useState } from "react"
+function Count(){
 
-//   const handler=()=>{
-//     setname( (p)=>p+1)
-//   }
-//   const handler1=()=>{
-//     setname((p)=>p-1)
-//   }
+  const [counter,setcounter]=useState(0)
+  const[cleared,setclear]=useState("")
 
-//   return(
-//     <div>
-//       <button onClick={handler}>plus</button> 
-    
-//           <button onClick={handler1}>mines</button> 
-//       <p>{name}</p>
-//     </div>
-//   )
-// }
-// export default written;
-
-
-
-
-// function Plate({food}){
-//   return <h1>here is your {food}</h1>
-// }
-
-// function Resturant(){
-//   return(
-//   <div>
-    
-//     <Plate food="" />
-//     <Plate food="mandhi" />
-//     <Plate food="chore" />     
-//   </div>
-//   )
-// }
-// export default Resturant;
-
-// function Car({cars}){
-//   return <h1>here is your {cars}</h1>
-// }
-//   function Vehicle(){
-//   return(
-//     <div>
-//      <Car cars="bmw"/>
-//       <Car cars="bmw"/>
-//        <Car cars="bmw"/>
-//     </div>
-//   )
-//   }
-//   export default Vehicle;
-// import React from "react";
-// function Car({cars}){
-//   return <h1>hey {cars}</h1>
-// }
-
-// export default Car;
+  const Handler=()=>{
+    setcounter(counter+1)
+  }
+    const Clear=()=>{
+      setCounter(0);
+      setclear("") 
+    }
   
-// import React from "react";
-// function App() {
-//   let isLoggedIn = false;
-
-//   if (isLoggedIn) {
-//     return <h1>Welcome User</h1>;
-//   } else {
-//     return <h1>Please Login</h1>;
-//   }
-// }
-
-// export default App;
-// function App() {
-//   let age = 20;
-
-//   return (
-//     <div>
-//       {age >= 18 ? <h1>Adult</h1> : <h1>Minor</h1>}
-//     </div>
-//   );
-// }
-
-// export default App;
-const fruits = ["Apple", "Banana", "Orange"];
-
-function FruitList() {
-  return (
+  return(
     <div>
-      {fruits.map((item) => (
-        <h2>{item}</h2>
-      ))}
+      <p>here the count {counter}</p>
+      <button onClick={Handler}>switch</button>
+      <button onClick={Clear}>switch</button>
+
     </div>
-  );
+  )
 }
+export default Count;
 
